@@ -117,6 +117,7 @@
     .menu > img{
         width: 35px;
         height: 35px;
+        animation: rotateCircle 1s ease;
     }
     .cart_and_btn__block, .navbar__item_btn, .navbar__item_nav{
         display: none;
@@ -150,6 +151,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    .ionicon{
+        color: white;
+        animation: rotateCircle 1s ease;
+    }
 }
 
 @keyframes heightAni {
@@ -157,6 +162,15 @@
         max-height: 0;
     } to {
         max-height: 100vh;
+    }
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 

@@ -19,6 +19,8 @@ const Navbar = () => {
     setIsBurgerMenuOpen((prevIsOpen) => !prevIsOpen);
   };
 
+  const [ clicked, setClicked ] = useState(false);
+
 
   return (
     <nav className={styles.navbar}>
@@ -31,7 +33,12 @@ const Navbar = () => {
           </div>
           <div className={styles.navbar__item_menu}>
             <div className={styles.menu} onClick={toggleBurgerMenu}>
-              <img src={MenuSVG} alt="Menu" />
+              { !clicked && (
+                <img src={MenuSVG} alt="Menu" onClick={() => setClicked(!clicked)} />
+              ) }
+              { clicked && (
+                <svg onClick={() => setClicked(!clicked)} xmlns="http://www.w3.org/2000/svg" className={styles.ionicon} viewBox="0 0 512 512"><path fill="#ffffff" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+              ) }
             </div>
           </div>
           <div className={`${styles.navbar__item_nav}`}>
