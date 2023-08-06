@@ -75,6 +75,8 @@
     .footer__items{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .footer{
         width: 100%;
@@ -82,5 +84,33 @@
     }
     .container{
         max-width: 300px;
+    }
+    .footer__item_logo_and_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+    }
+    .footer__items{
+        gap: 50px;
+    }
+    .footer_nav{
+        width: 100%;
+    }
+    .named_nav{
+        font-size: 24px;
+    }
+    .footer_nav > li{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 }
