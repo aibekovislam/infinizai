@@ -69,3 +69,18 @@
     font-size: 1vw;
     line-height: 37px;
 }
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 850px) {
+    .footer__items{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .container{
+        max-width: 300px;
+    }
+}

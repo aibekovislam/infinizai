@@ -154,5 +154,32 @@
 /* Breakpoints */
 
 @media screen and (min-device-width: 320px) and (max-device-width: 850px) {
-    
+    .fire__and__text{
+        display: none;
+    }
+    .hero__title{
+        font-size: 48px;
+        width: 100%;
+    }
+    .hero__text{
+        width: 100%;
+    }
+    .hero__img{
+        display: none;
+    }
+    .hero__btns{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn__regular{
+        border: 1px solid white;
+        width: 200px;
+        height: 70px;
+    }
+    .lineSVG{
+        width: 300px;
+        left: 0;
+    }
 }

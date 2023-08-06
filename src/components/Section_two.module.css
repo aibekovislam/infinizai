@@ -149,3 +149,64 @@
     font-family: "Orbitron-regular"; 
     width: 19vw;
 }
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 850px) {
+    .fire__and__text{
+        width: 100%;
+    }
+    .section_two__item_title_and_btn{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .title{
+        max-width: 100%;
+        width: 100%;
+        font-size: 32px;
+    }
+    .button__read_more{
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .section_two__item_bigIMG_and_gridIMG{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .IMG > img{
+        width: 100%;
+    }
+    .info_date{
+        width: 100%;
+        font-size: 18px;
+    }
+    .info_text{
+        font-size: 23px;
+        width: 100%;
+    }
+    .gridIMG{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .grid__item > img{
+        width: 100%;
+    }
+    .grid_info_date{
+        width: 100%;
+        font-size: 18px;
+    }
+    .grid_info_text{
+        font-size: 23px;
+        width: 100%;
+    }
+}
