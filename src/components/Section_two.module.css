@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Orbitron-regular"; 
+    src: url("../font/Orbitron-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+}
+  
+@font-face {
+    font-family: "Orbitron-semibold"; 
+    src: url("../font/Orbitron-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+} 
+  
+@font-face {
+    font-family: "Orbitron-bold"; 
+    src: url("../font/Orbitron-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+}
+
+.section_two{
+    padding: 130px 0px;
+    position: relative;
+    z-index: 2;
+    background: black;
+}
+
+.container{
+    max-width: 87vw;
+    margin: 0 auto;
+}
+
+.section_two__items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+.section_two__item_title_and_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    font-size: 4.1vw;
+    color: white;
+    font-family: "Orbitron-regular"; 
+    max-width: 35vw;
+}
+
+.fire__and__text{
+    display: flex;
+    align-items: center;
+    width: 33vw;
+}
+
+.text{
+    color: #57B8FF;
+    font-family: "Orbitron-regular"; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.button__read_more{
+    width: 11.4vw;
+    height: 9.7vh;
+    color: white;
+    background: #57B8FF;
+    font-size: 1.1vw;
+    font-family: "Orbitron-regular"; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_two__item_bigIMG_and_gridIMG{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigIMG{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.IMG > img {
+    width: 43vw;
+}
+
+.IMG__info{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.info_date{
+    color: #57B8FF;
+    width: 8.5vw;
+    font-family: "Orbitron-regular"; 
+}
+
+.info_text{
+    color: #FFF;
+    font-size: 2.3vw;
+    font-family: "Orbitron-regular"; 
+    width: 40vw;
+}
+
+.gridIMG {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.grid__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid__item > img {
+    width: 20vw;
+    height: auto;
+}
+
+.gridIMG__info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid_info_date{
+    color: #57B8FF;
+    width: 8.5vw;
+    font-family: "Orbitron-regular"; 
+}
+
+.grid_info_text{
+    color: #FFF;
+    font-size: 1.5vw;
+    font-family: "Orbitron-regular"; 
+    width: 19vw;
+}

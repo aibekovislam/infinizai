@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Orbitron-regular"; 
+  src: url("./font/Orbitron-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "Orbitron-semibold"; 
+  src: url("./font/Orbitron-SemiBold.ttf") format("truetype"); 
+  font-style: normal; 
+} 
+
+@font-face {
+  font-family: "Orbitron-bold"; 
+  src: url("./font/Orbitron-Bold.ttf") format("truetype"); 
+  font-style: normal; 
+} 
+
+.app{
+  background-color: black;
+}

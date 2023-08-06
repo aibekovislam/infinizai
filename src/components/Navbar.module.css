@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Orbitron-regular"; 
+    src: url("../font/Orbitron-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+}
+  
+@font-face {
+    font-family: "Orbitron-semibold"; 
+    src: url("../font/Orbitron-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+} 
+  
+@font-face {
+    font-family: "Orbitron-bold"; 
+    src: url("../font/Orbitron-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.container{
+    max-width: 87vw;
+    margin: 0 auto;
+}
+
+.navbar__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__item{}
+
+.logo > img{
+    width: 11vw;
+    height: 7vh;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35.75vw;
+    list-style-type: none;
+    gap: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.navigation > li > a{
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    font-size: 1.2vw;
+    font-family: "Orbitron-regular"; 
+    transition-duration: 0.3s;
+}
+
+.navigation > li > a:hover{
+    color: #FAC422;
+}
+
+.active{
+    color: #FAC422 !important;
+}
+
+.cart_and_btn__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15.9vw;
+    z-index: 2;
+}
+
+.cart{
+    width: 3.1vw;
+    height: 6.7vh;
+    z-index: 2;
+}
+
+.navbar__btn{
+    width: 11vw;
+    height: 8.3vh;
+    border: 1px solid #FFF;
+    background-color: initial;
+    color: white;
+    z-index: 2;
+    font-family: "Orbitron-regular"; 
+}

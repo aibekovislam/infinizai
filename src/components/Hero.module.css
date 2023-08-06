@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Orbitron-regular"; 
+    src: url("../font/Orbitron-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+}
+  
+@font-face {
+    font-family: "Orbitron-semibold"; 
+    src: url("../font/Orbitron-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+} 
+  
+@font-face {
+    font-family: "Orbitron-bold"; 
+    src: url("../font/Orbitron-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+}
+
+.hero__items{
+    display: flex;
+    z-index: 3;
+    gap: 3.3vw;
+}
+
+.hero__item__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 100px; По фигме должно было так но я сделал space-between более красивее выглядит */
+    width: 100%;
+}
+
+.hero__item{}
+
+.vertical__navigation_for_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    font-size: 16px;
+    font-family: "Orbitron-regular"; 
+    margin: 0px 20px;
+    height: 90vh;
+    transform: rotate(90deg);
+    color: #80858F;
+    cursor: pointer;
+    list-style-type: none;
+    gap: 25px;
+    z-index: 3;
+    position: relative;
+}
+
+.hero__info_block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.fire__and__text{
+    display: flex;
+    align-items: center;
+    width: 33vw;
+}
+
+.text{
+    color: #57B8FF;
+    font-family: "Orbitron-regular"; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.hero__main_items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.hero__title{
+    color: white;
+    font-size: 3.6vw;
+    font-family: "Orbitron-regular"; 
+    width: 33vw;
+    position: relative;
+}
+
+.lineSVG{
+    position: absolute;
+    right: 0;
+    left: 9.7vw;
+    width: 23vw;
+}
+
+.underline{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+.hero__text{
+    color: #999;
+    font-family: "Orbitron-regular"; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 33vw; 
+}
+
+.hero__btns{
+    display: flex;
+    width: 33vw;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.btn__styled{
+    background: #57B8FF;
+    color: white;
+    width: 200px;
+    height: 70px;
+    border: none;
+    font-size: 18px;
+    font-family: "Orbitron-regular";
+    cursor: pointer; 
+}
+
+.btn__regular{
+    background-color: initial;
+    border: none;
+    color: white;
+    font-family: "Orbitron-regular"; 
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero__img > img {
+    position: relative;
+    z-index: 3;
+    width: 43vw;
+    height: 71vh;
+    object-fit: contain;
+}

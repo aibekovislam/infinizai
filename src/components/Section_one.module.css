@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Orbitron-regular"; 
+    src: url("../font/Orbitron-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+}
+  
+@font-face {
+    font-family: "Orbitron-semibold"; 
+    src: url("../font/Orbitron-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+} 
+  
+@font-face {
+    font-family: "Orbitron-bold"; 
+    src: url("../font/Orbitron-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+}
+
+.section_one{
+    position: relative;
+    z-index: 2;
+    background: #2A313C;
+}
+
+.container{
+    max-width: 87vw;
+    margin: 0 auto;
+}
+
+.section__items{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel__img > img{
+    width: 38vw;
+    object-fit: contain;
+}
+
+.info__block{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 37vw;
+}
+
+.fire__and__text{
+    display: flex;
+    align-items: center;
+    width: 33vw;
+}
+
+.text{
+    color: #57B8FF;
+    font-family: "Orbitron-regular"; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.info__title{
+    font-size: 4.1vw;
+    font-family: "Orbitron-regular"; 
+    color: white;
+    width: 37vw;
+}
+
+.info__text{
+    width: 37vw;
+    font-family: "Orbitron-regular"; 
+    color: white;
+    line-height: 30px;
+    font-size: 1.3vw;
+    color: rgba(223, 223, 223, 0.80);
+}
+
+.info__carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel__item{
+    transition-duration: all 0.3s;
+    cursor: pointer;
+}
+
+.carousel__item > img{
+    width: 11vw;
+}
+
+.active{
+    border-radius: 20px;
+    background: #3B3D46;
+    padding: 10px;
+    animation: scaleInBackground 0.3s ease;
+}
+
+@keyframes scaleInBackground {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+}
