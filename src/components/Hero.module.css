@@ -25,8 +25,8 @@
 .hero__item__block{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* gap: 100px; По фигме должно было так но я сделал space-between более красивее выглядит */
+    /* justify-content: space-between; */
+    gap: 6.5vw;
     width: 100%;
 }
 
@@ -148,4 +148,11 @@
     width: 43vw;
     height: 71vh;
     object-fit: contain;
+}
+
+
+/* Breakpoints */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 850px) {
+    
 }
